@@ -1,5 +1,4 @@
 
-
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -14,6 +13,18 @@ using Foodify.Data.Entities;
 using Foodify.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy => policy
+            .WithOrigins("http://localhost:3000", "http://192.168.29.35:3000")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials()
+    );
+});
 
 // JWT Authentication
 builder.Services.AddAuthentication(options =>
@@ -81,7 +92,9 @@ builder.Services.AddScoped<IDeliveryAssignmentService, DeliveryAssignmentService
 builder.Services.AddAutoMapper(typeof(UserProfile), typeof(RestaurantProfile), typeof(OrderProfile), typeof(OrderItemProfile), typeof(MenuProfile), typeof(DeliveryPartnerProfile), typeof(DeliveryAssignmentProfile));
 builder.Services.AddControllers(); // Add this if missing
 
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -90,6 +103,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseHttpsRedirection();
+app.UseCors("AllowFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers(); // Add this if missing

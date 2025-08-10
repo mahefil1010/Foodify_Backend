@@ -30,7 +30,7 @@ namespace Foodify.API.Services
             {
                 UserName = model.Email,
                 Email = model.Email,
-                Name = model.Name,
+                Name =  model.FirstName + " " + model.LastName ,
                 Role = role,
                 IsActive = true,
                 CreatedDate = DateTime.UtcNow
