@@ -1,14 +1,12 @@
+
+using Microsoft.AspNetCore.Identity;
 using System;
 
 namespace Foodify.Data.Entities
 {
-    public class User
+    public class User : IdentityUser<Guid>
     {
-        public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
-        public string PasswordHash { get; set; }
-        public string Phone { get; set; }
         public string Role { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsActive { get; set; }
