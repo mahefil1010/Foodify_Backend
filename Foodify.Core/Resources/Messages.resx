@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+  <data name="Error_User_NotFound" xml:space="preserve">
+    <value>User not found.</value>
+  </data>
+  <data name="Success_User_Created" xml:space="preserve">
+    <value>User created successfully.</value>
+  </data>
+  <data name="Success_User_Updated" xml:space="preserve">
+    <value>User updated successfully.</value>
+  </data>
+  <data name="Success_User_Deleted" xml:space="preserve">
+    <value>User deleted successfully.</value>
+  </data>
+  <data name="Success_Order_Created" xml:space="preserve">
+    <value>Order created successfully.</value>
+  </data>
+  <data name="Error_Order_NotFound" xml:space="preserve">
+    <value>Order not found.</value>
+  </data>
+  <data name="Success_Order_Updated" xml:space="preserve">
+    <value>Order updated successfully.</value>
+  </data>
+  <data name="Success_Order_Deleted" xml:space="preserve">
+    <value>Order deleted successfully.</value>
+  </data>
+  <data name="Success_Restaurant_Created" xml:space="preserve">
+    <value>Restaurant created successfully.</value>
+  </data>
+  <data name="Error_Restaurant_NotFound" xml:space="preserve">
+    <value>Restaurant not found.</value>
+  </data>
+  <data name="Success_Restaurant_Updated" xml:space="preserve">
+    <value>Restaurant updated successfully.</value>
+  </data>
+  <data name="Success_Restaurant_Deleted" xml:space="preserve">
+    <value>Restaurant deleted successfully.</value>
+  </data>
+  <data name="Success_OrderItem_Created" xml:space="preserve">
+    <value>Order item created successfully.</value>
+  </data>
+  <data name="Error_OrderItem_NotFound" xml:space="preserve">
+    <value>Order item not found.</value>
+  </data>
+  <data name="Success_OrderItem_Updated" xml:space="preserve">
+    <value>Order item updated successfully.</value>
+  </data>
+  <data name="Success_OrderItem_Deleted" xml:space="preserve">
+    <value>Order item deleted successfully.</value>
+  </data>
+  <data name="Success_Menu_Created" xml:space="preserve">
+    <value>Menu created successfully.</value>
+  </data>
+  <data name="Error_Menu_NotFound" xml:space="preserve">
+    <value>Menu not found.</value>
+  </data>
+  <data name="Success_Menu_Updated" xml:space="preserve">
+    <value>Menu updated successfully.</value>
+  </data>
+  <data name="Success_Menu_Deleted" xml:space="preserve">
+    <value>Menu deleted successfully.</value>
+  </data>
+  <data name="Success_DeliveryPartner_Created" xml:space="preserve">
+    <value>Delivery partner created successfully.</value>
+  </data>
+  <data name="Error_DeliveryPartner_NotFound" xml:space="preserve">
+    <value>Delivery partner not found.</value>
+  </data>
+  <data name="Success_DeliveryPartner_Updated" xml:space="preserve">
+    <value>Delivery partner updated successfully.</value>
+  </data>
+  <data name="Success_DeliveryPartner_Deleted" xml:space="preserve">
+    <value>Delivery partner deleted successfully.</value>
+  </data>
+  <data name="Success_DeliveryAssignment_Created" xml:space="preserve">
+    <value>Delivery assignment created successfully.</value>
+  </data>
+  <data name="Error_DeliveryAssignment_NotFound" xml:space="preserve">
+    <value>Delivery assignment not found.</value>
+  </data>
+  <data name="Success_DeliveryAssignment_Updated" xml:space="preserve">
+    <value>Delivery assignment updated successfully.</value>
+  </data>
+  <data name="Success_DeliveryAssignment_Deleted" xml:space="preserve">
+    <value>Delivery assignment deleted successfully.</value>
+  </data>
+</root>
